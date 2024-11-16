@@ -9,9 +9,9 @@ Familiarizarea cu principiile de bază ale lucrului cu baze de date în Laravel.
 Vom adăuga funcționalitatea de lucru cu baza de date, vom crea modele și migrații, vom configura relațiile dintre modele și vom învăța să utilizam fabrici și seed-uri pentru generarea datelor de testare.
 
 ## №1. Pregătirea pentru lucru
-1. Instalați SGBD-ul MySQL, PostgreSQL sau SQLite pe calculatorul dumneavoastră.
-2. Crearea bazei de date: Creați o nouă bază de date pentru aplicația dvs. todo_app.
-3. Configurați variabilele de mediu în fișierul .env pentru a vă conecta la baza de date:
+1. Instalam SGBD-ul MySQL, PostgreSQL sau SQLite pe calculatorul dumneavoastră.
+2. Cream o nouă bază de date pentru aplicația todo_app.
+3. Configuram variabilele de mediu în fișierul `.env` pentru a ne conecta la baza de date:
 ```
 DB_CONNECTION=baza_dvs_de_date (mysql, pgsql, sqlite)
 DB_HOST=127.0.0.1
