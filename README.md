@@ -168,24 +168,27 @@ public function tasks()
 ![image](https://github.com/user-attachments/assets/33039bdf-a91a-4388-84d7-80b2fc872188)
    
 4. Cream seed-uri pentru a popula tabelele cu date inițiale pentru modelele `Category`, `Task`, `Tag`.
-CategoryFactory.php:
+   
+**CategoryFactory.php**
 
 ![image](https://github.com/user-attachments/assets/0b9b0a7b-bf3d-4c40-8a89-e7501cfae4be)
 
-TaskFactory.php
+**TaskFactory.php**
 
 ![image](https://github.com/user-attachments/assets/d3e62e34-c8b6-4c37-a1e1-3d43710ac19a)
 
-TagFactory.php
+**TagFactory.php**
 
 ![image](https://github.com/user-attachments/assets/67a29ff8-17fa-45b9-b7e3-1cdb144335c4)
 
-6. Actualizam fișierul DatabaseSeeder pentru a lansa seed-urile și le rulam:
+5. Actualizam fișierul DatabaseSeeder pentru a lansa seed-urile și le rulam:
 
-DatabaseSeeder.php
+**DatabaseSeeder.php**
 ![image](https://github.com/user-attachments/assets/a4dc264f-2ca9-444c-8eb8-bcafe986ec35)
 
 `php artisan db:seed`
+
+![image](https://github.com/user-attachments/assets/7a6e400c-e54e-41aa-829c-c61a3413b2b3)
 
 
 ## №6. Lucrul cu controlere și vizualizări
