@@ -42,6 +42,9 @@ Adăugam câmpurile:
 
  - `updated_at` — data actualizării categoriei.
 
+![image](https://github.com/user-attachments/assets/cdcebbe2-a98e-4548-83e9-d65cdbd59628)
+
+
 3. Cream modelul `Task` — sarcina.
 
 ![image](https://github.com/user-attachments/assets/b47ec1d1-4322-440d-b2cd-e82df81cd2d2)
@@ -60,8 +63,13 @@ Adăugam câmpurile:
 
  - `updated_at` — data actualizării sarcinii.
 
+![image](https://github.com/user-attachments/assets/809d01cf-fb77-416a-8b66-732b25b67a57)
+
+
 7. Rulam migrarea pentru a crea tabelele în baza de date:
 `php artisan migrate`
+
+![image](https://github.com/user-attachments/assets/75a72cb9-cb35-41c4-a7ae-79652548fa80)
 
 9. Cream modelul `Tag` — eticheta unei sarcini.
 
@@ -79,7 +87,15 @@ Adăugam câmpurile:
 
  - `updated_at` — data actualizării etichetei.
 
+![image](https://github.com/user-attachments/assets/98e6764e-9725-4bef-b6c6-e5306a0ed193)
+
+
 13. Adăugam câmpul $fillable în modelele `Task`, `Category` și `Tag` pentru a permite atribuirea în masă a datelor.
+![image](https://github.com/user-attachments/assets/e81a6186-ef68-4aa7-b2e4-ae0c994501b1)
+
+![image](https://github.com/user-attachments/assets/a476f3f7-a1db-4e41-b899-c4ebda51606f)
+
+![image](https://github.com/user-attachments/assets/bdfb2dab-9a29-4981-8e09-da0778a9ac41)
 
 
 
