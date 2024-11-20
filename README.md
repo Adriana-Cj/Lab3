@@ -49,7 +49,7 @@ Adăugam câmpurile:
 
 ![image](https://github.com/user-attachments/assets/b47ec1d1-4322-440d-b2cd-e82df81cd2d2)
 
-5. Definirea structurii tabelei **task** în migrație:
+4. Definirea structurii tabelei **task** în migrație:
    
 Adăugam câmpurile:
 
@@ -66,16 +66,17 @@ Adăugam câmpurile:
 ![image](https://github.com/user-attachments/assets/809d01cf-fb77-416a-8b66-732b25b67a57)
 
 
-7. Rulam migrarea pentru a crea tabelele în baza de date:
+5. Rulam migrarea pentru a crea tabelele în baza de date:
+   
 `php artisan migrate`
 
 ![image](https://github.com/user-attachments/assets/75a72cb9-cb35-41c4-a7ae-79652548fa80)
 
-9. Cream modelul `Tag` — eticheta unei sarcini.
+6. Cream modelul `Tag` — eticheta unei sarcini.
 
 ![image](https://github.com/user-attachments/assets/54cb87f6-5ae7-40bd-abf3-94d5b07cfb76)
     
-11. Definirea structurii tabelei tag în migrație:
+7. Definirea structurii tabelei tag în migrație:
     
 Adăugam câmpurile:
 
@@ -90,7 +91,7 @@ Adăugam câmpurile:
 ![image](https://github.com/user-attachments/assets/98e6764e-9725-4bef-b6c6-e5306a0ed193)
 
 
-13. Adăugam câmpul $fillable în modelele `Task`, `Category` și `Tag` pentru a permite atribuirea în masă a datelor.
+8. Adăugam câmpul $fillable în modelele `Task`, `Category` și `Tag` pentru a permite atribuirea în masă a datelor.
 ![image](https://github.com/user-attachments/assets/e81a6186-ef68-4aa7-b2e4-ae0c994501b1)
 
 ![image](https://github.com/user-attachments/assets/a476f3f7-a1db-4e41-b899-c4ebda51606f)
@@ -104,17 +105,26 @@ Adăugam câmpurile:
    
 `php artisan make:migration add_category_id_to_tasks_table --table=tasks`
 
+![image](https://github.com/user-attachments/assets/4e23d822-0e27-4e48-a89e-8361778aae92)
+
 Definim structura câmpului `category_id` și adăugam cheia externă pentru a face legătura cu tabela **category**.
+
+![image](https://github.com/user-attachments/assets/1ab673d7-e2f4-4d79-8df7-eb181c6600bf)
    
 2. Cream o tabelă intermediară pentru relația de tipul multe-la-multe dintre sarcini și etichete:
 `php artisan make:migration create_task_tag_table`
+
+![image](https://github.com/user-attachments/assets/937370aa-734a-473c-8e79-582588a6a8ca)
 
 3. Definirea structurii corespunzătoare a tabelei în migrație.
  - Această tabelă trebuie să lege sarcinile și etichetele prin identificatorii lor.
  - Exemplu: `task_id` și `tag_id`: sarcina `10` este legată de eticheta `5`.
 
-5. Rulam migrarea pentru a crea tabela în baza de date.
+![image](https://github.com/user-attachments/assets/7ba408b7-b13a-4a9b-b619-295c27f21b30)
+   
+4. Rulam migrarea pentru a crea tabela în baza de date.
 
+![image](https://github.com/user-attachments/assets/45ad2dbc-332a-42d9-b48a-bd94a5a8b39b)
 
 
 ## №4. Relațiile dintre modele
