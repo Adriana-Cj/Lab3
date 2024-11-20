@@ -20,6 +20,7 @@ DB_DATABASE=todo_app
 DB_USERNAME=utilizator_dvs
 DB_PASSWORD=parola_dvs
 ```
+![image](https://github.com/user-attachments/assets/8c782af5-a097-4ea4-b05c-8355df0bbd92)
 
 ## №2. Crearea modelelor și migrațiilor
 1. Cream modelul `Category` — categoria unei sarcini.
