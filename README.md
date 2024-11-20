@@ -26,6 +26,8 @@ DB_PASSWORD=parola_dvs
 1. Cream modelul `Category` — categoria unei sarcini.
 `php artisan make:model Category -m`
 
+![image](https://github.com/user-attachments/assets/d769e3eb-142f-4a87-b711-25b1b2068a68)
+
 2. Definirea structurii tabelei category în migrație:
    
 Adăugam câmpurile:
@@ -41,7 +43,9 @@ Adăugam câmpurile:
  - `updated_at` — data actualizării categoriei.
 
 3. Cream modelul `Task` — sarcina.
-   
+
+![image](https://github.com/user-attachments/assets/b47ec1d1-4322-440d-b2cd-e82df81cd2d2)
+
 5. Definirea structurii tabelei **task** în migrație:
    
 Adăugam câmpurile:
@@ -60,6 +64,8 @@ Adăugam câmpurile:
 `php artisan migrate`
 
 9. Cream modelul `Tag` — eticheta unei sarcini.
+
+![image](https://github.com/user-attachments/assets/54cb87f6-5ae7-40bd-abf3-94d5b07cfb76)
     
 11. Definirea structurii tabelei tag în migrație:
     
