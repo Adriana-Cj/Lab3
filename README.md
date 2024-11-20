@@ -128,18 +128,24 @@ Definim structura câmpului `category_id` și adăugam cheia externă pentru a f
 
 ## №4. Relațiile dintre modele
 1. Adăugam relații în modelul `Category` (O categorie poate avea multe sarcini)
-Deschidem modelul `Category` și adăugați metoda:
+Deschidem modelul `Category` și adăugam metoda:
 ```
 public function tasks()
 {
     return $this->hasMany(Task::class);
 }
 ```
+![image](https://github.com/user-attachments/assets/feda669e-e6a2-4900-abba-2c1c28b8227e)
+
 2. Adăugam relații în modelul `Task`
  - Sarcina este legată de o categorie.
  - Sarcina poate avea multe etichete.
 
+![image](https://github.com/user-attachments/assets/26982bcf-4419-464a-8fd2-ec89a959fafc)
+
 3. Adăugam relații în modelul `Tag` (O etichetă poate fi legată de multe sarcini).
+
+![image](https://github.com/user-attachments/assets/4727163b-7be5-478f-be68-f0da187f78d0)
 
 4. Adăugam câmpurile corespunzătoare în `$fillable` ale modelelor.
 
