@@ -155,17 +155,38 @@ public function tasks()
    
 `php artisan make:factory CategoryFactory --model=Category`
 
+![image](https://github.com/user-attachments/assets/736b9938-6c6d-4f98-8a88-731f39953476)
+
  - Definim structura datelor pentru generarea categoriilor.
 
 2. Cream o fabrică pentru modelul `Task`.
+
+![image](https://github.com/user-attachments/assets/0e9e3785-b1b0-4cae-913b-ad33c7c7e52d)
+
+3. Cream o fabrică pentru modelul `Tag`.
    
-4. Cream o fabrică pentru modelul `Tag`.
+![image](https://github.com/user-attachments/assets/33039bdf-a91a-4388-84d7-80b2fc872188)
    
-6. Cream seed-uri pentru a popula tabelele cu date inițiale pentru modelele `Category`, `Task`, `Tag`.
-   
-8. Actualizam fișierul DatabaseSeeder pentru a lansa seed-urile și rulați-le:
-   
+4. Cream seed-uri pentru a popula tabelele cu date inițiale pentru modelele `Category`, `Task`, `Tag`.
+CategoryFactory.php:
+
+![image](https://github.com/user-attachments/assets/0b9b0a7b-bf3d-4c40-8a89-e7501cfae4be)
+
+TaskFactory.php
+
+![image](https://github.com/user-attachments/assets/d3e62e34-c8b6-4c37-a1e1-3d43710ac19a)
+
+TagFactory.php
+
+![image](https://github.com/user-attachments/assets/67a29ff8-17fa-45b9-b7e3-1cdb144335c4)
+
+6. Actualizam fișierul DatabaseSeeder pentru a lansa seed-urile și le rulam:
+
+DatabaseSeeder.php
+![image](https://github.com/user-attachments/assets/a4dc264f-2ca9-444c-8eb8-bcafe986ec35)
+
 `php artisan db:seed`
+
 
 ## №6. Lucrul cu controlere și vizualizări
 1. Deschidem controlerul TaskController (app/Http/Controllers/TaskController.php).
