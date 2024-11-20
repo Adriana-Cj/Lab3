@@ -66,17 +66,11 @@ Adăugam câmpurile:
 ![image](https://github.com/user-attachments/assets/809d01cf-fb77-416a-8b66-732b25b67a57)
 
 
-5. Rulam migrarea pentru a crea tabelele în baza de date:
-   
-`php artisan migrate`
-
-![image](https://github.com/user-attachments/assets/75a72cb9-cb35-41c4-a7ae-79652548fa80)
-
-6. Cream modelul `Tag` — eticheta unei sarcini.
+5. Cream modelul `Tag` — eticheta unei sarcini.
 
 ![image](https://github.com/user-attachments/assets/54cb87f6-5ae7-40bd-abf3-94d5b07cfb76)
     
-7. Definirea structurii tabelei tag în migrație:
+6. Definirea structurii tabelei tag în migrație:
     
 Adăugam câmpurile:
 
@@ -90,6 +84,11 @@ Adăugam câmpurile:
 
 ![image](https://github.com/user-attachments/assets/98e6764e-9725-4bef-b6c6-e5306a0ed193)
 
+7. Rulam migrarea pentru a crea tabelele în baza de date:
+   
+`php artisan migrate`
+
+![image](https://github.com/user-attachments/assets/75a72cb9-cb35-41c4-a7ae-79652548fa80)
 
 8. Adăugam câmpul $fillable în modelele `Task`, `Category` și `Tag` pentru a permite atribuirea în masă a datelor.
 ![image](https://github.com/user-attachments/assets/e81a6186-ef68-4aa7-b2e4-ae0c994501b1)
