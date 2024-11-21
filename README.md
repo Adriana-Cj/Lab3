@@ -242,10 +242,29 @@ DB::transaction(function () use ($request) {
 ## Întrebări de control
 **1. Ce sunt migrațiile și la ce se folosesc?**
 
+Migrațiile sunt fișiere care permit modificarea structurii unei baze de date (crearea, modificarea sau ștergerea tabelelor) într-un mod organizat. Ele sunt folosite pentru a urmări schimbările bazei de date în timp și pentru a sincroniza structura bazei între diferite medii de dezvoltare sau producție.
+
 **2. Ce sunt fabricile și seed-urile și cum simplifică procesul de dezvoltare și testare?**
+
+**Fabricile** sunt clase sau funcții care generează date false pentru testare. Ele simplifică procesul de creare a datelor pentru baze de date, reducând codul repetitiv.
+
+**Seed-urile** sunt scripturi care populează baza de date cu date inițiale sau de test. Ele sunt utile pentru a configura rapid baza cu informații necesare pentru dezvoltare sau testare.
 
 **3. Ce este ORM? Care sunt diferențele dintre pattern-urile DataMapper și ActiveRecord?**
 
+ORM (Object-Relational Mapping) este o tehnologie care mapează obiectele din cod la tabelele din baza de date, astfel încât să lucrezi cu baze de date folosind obiecte, nu interogări SQL.
+
+**DataMapper** separă complet obiectele de baza de date, iar salvarea sau încărcarea datelor se face printr-un obiect intermediar.
+
+**ActiveRecord** combină logica de bază de date cu obiectele; fiecare obiect este direct legat de un rând din tabel, iar metodele pentru salvare/încărcare sunt incluse în obiect.
+
 **4. Care sunt avantajele utilizării unui ORM comparativ cu interogările SQL directe?**
+ - Reduce cantitatea de cod SQL scris manual.
+ - Este mai ușor de utilizat și de învățat pentru dezvoltatori.
+ - Oferă portabilitate între diferite baze de date.
+ - Include validări, relații și alte funcționalități utile pentru dezvoltare.
+ - Simplifică gestionarea erorilor și a tranzacțiilor.
 
 **5. Ce sunt tranzacțiile și de ce sunt importante în lucrul cu bazele de date?**
+
+Tranzacțiile reprezintă un set de operații care sunt executate ca o unitate. Fie toate operațiile reușesc, fie niciuna nu se aplică. Ele sunt importante pentru a asigura integritatea datelor, mai ales în situații critice, precum transferurile bancare sau actualizările simultane în bază.
