@@ -195,19 +195,31 @@ public function tasks()
 1. Deschidem controlerul TaskController (app/Http/Controllers/TaskController.php).
    
 3. Actualizam metoda index pentru a obține lista sarcinilor din baza de date.
+
+![image](https://github.com/user-attachments/assets/8d9539e7-18a8-4b7d-9907-6058bfcaef87)
    
-5. Folosim modelul Task pentru a obține toate sarcinile.
+4. Folosim modelul Task pentru a obține toate sarcinile.
  - Actualizam metoda show pentru a afișa o sarcină individuală.
+![image](https://github.com/user-attachments/assets/75b65eaa-8d44-4fda-9464-198aa47a4983)
 
  - Afișam informațiile despre sarcină după identificatorul acesteia.
 
  - Obligatoriu afișam categoria și etichetele sarcinii.
 
-7. În metodele index și show, folosim metoda with (Eager Loading) pentru a încărca modelele asociate.
+![image](https://github.com/user-attachments/assets/49bb6d8b-352c-43ba-8340-3d2bf25a47d5)
+![image](https://github.com/user-attachments/assets/bfcd41f7-62b5-4968-aaf1-7f94f0758085)
+
+
+5. În metodele index și show, folosim metoda with (Eager Loading) pentru a încărca modelele asociate.
    
-9. Actualizam vizualizările corespunzătoare pentru a afișa lista de sarcini și o sarcină individuală.
+6. Actualizam vizualizările corespunzătoare pentru a afișa lista de sarcini și o sarcină individuală.
+
+![image](https://github.com/user-attachments/assets/85a45914-a63a-4c8f-ac23-a1b9ae349d39)
+
+![image](https://github.com/user-attachments/assets/ca8fd7ed-3988-46b7-9819-61b99d2199b1)
+
     
-11. Actualizam metoda create pentru a afișa formularul de creare a unei sarcini și metoda store pentru a salva o sarcină nouă în baza de date.
+7. Actualizam metoda create pentru a afișa formularul de creare a unei sarcini și metoda store pentru a salva o sarcină nouă în baza de date.
     
 Notă: Deoarece nu am studiat încă formularele, folosim obiectul Request pentru a obține datele. De exemplu:
 ```
@@ -215,20 +227,43 @@ $request->input('title');
 // sau
 $request->all();
 ```
+
+![image](https://github.com/user-attachments/assets/5ec9361d-1694-42df-b493-5501605845ef)
+
+
 7. Actualizam metoda edit pentru a afișa formularul de editare a unei sarcini și metoda update pentru a salva modificările în baza de date.
-   
+
+![image](https://github.com/user-attachments/assets/6a8ed00b-6616-4e0d-92a2-fd8a8d771e3e)
+
+
 9. Actualizam metoda destroy pentru a șterge o sarcină din baza de date.
+
+![image](https://github.com/user-attachments/assets/3756e36f-63a9-4de3-9ac7-36feffafe860)
 
 
 ## Sarcini suplimentare
 1. Cream modelul `Comment` pentru comentariile sarcinilor.
+
+![image](https://github.com/user-attachments/assets/42764be1-0df2-48f0-88b9-a0c2c5680511)
+
 Adăugam câmpurile corespunzătoare în migrare.
+
+![image](https://github.com/user-attachments/assets/b7b5efa7-7150-4369-b59e-065931739c7c)
+
 Cream relații între modelele `Task` și `Comment`.
+
+![image](https://github.com/user-attachments/assets/76c443c4-8e2d-4b60-9030-5b4fb784fcac)
+![image](https://github.com/user-attachments/assets/91903b1d-bf66-40ca-8dc0-3f3a37b5c989)
 
 2. Adăugam posibilitatea de a adăuga comentarii la sarcini.
 Actualizați vizualizarea pentru a afișa comentariile unei sarcini și pentru a vizualiza lista de comentarii și comentariul după `id`:
 
 `/task/{id}/comment, /task/{id}/comment/{comment_id}`.
+
+![image](https://github.com/user-attachments/assets/e75c4e14-6cc0-4cca-8cc1-e5aa6ffa272a)
+
+![image](https://github.com/user-attachments/assets/fd696d66-f870-4825-8372-a2a4143d4b44)
+
 
 3. Adăugam posibilitatea de a adăuga etichete la sarcini și folosiți tranzacții pentru a salva relațiile dintre sarcini și etichete.
 ```
@@ -237,6 +272,7 @@ DB::transaction(function () use ($request) {
      // Legarea etichetelor la sarcină
  });
 ```
+![image](https://github.com/user-attachments/assets/ff2950f2-3fbe-4410-b2f3-86f839092b4e)
 
 
 ## Întrebări de control
